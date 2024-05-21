@@ -1,6 +1,14 @@
+import { configureCompat } from "@vue/compat";
 import BootstrapVue from "bootstrap-vue";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
+
+configureCompat({
+  GLOBAL_EXTEND: false,
+  GLOBAL_MOUNT: false,
+  GLOBAL_PROTOTYPE: false,
+  WATCH_ARRAY: false,
+});
 
 export default defineNuxtPlugin((nuxtApp) => {
   const { vueApp } = nuxtApp;

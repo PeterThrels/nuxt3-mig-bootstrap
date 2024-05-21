@@ -11,5 +11,9 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
+    "types": ["@nuxt/types"],
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
 }
