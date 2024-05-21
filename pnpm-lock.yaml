@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.4
+        version: 5.0.4(vite@5.2.11(@types/node@20.12.12)(terser@5.31.0))(vue@3.4.27)
+      '@vue/compat':
+        specifier: ^3.4.27
+        version: 3.4.27(vue@3.4.27)
+      '@vue/compiler-sfc':
+        specifier: ^3.4.27
+        version: 3.4.27
       bootstrap:
         specifier: ^5.3.3
         version: 5.3.3(@popperjs/core@2.11.8)
@@ -1045,6 +1054,11 @@ packages:
     resolution: {integrity: sha512-EntyroPwNg5IPVdUJupqs0CFzuf6lUrVvCspmv2J1FITLeGnUCuoGNNk78dgCusxEiYj6RMkTJflGSxk5aIC4A==}
     peerDependencies:
       '@babel/core': ^7.0.0-0
+
+  '@vue/compat@3.4.27':
+    resolution: {integrity: sha512-H2W93cPe9WXXkHiYEeX7f2Z8/znElm44fxgj8uBhgC6cxvjDUOLIcIJySs+FZvv6JM+Re/SBUnlcr4LJMaQZzw==}
+    peerDependencies:
+      vue: 3.4.27
 
   '@vue/compiler-core@3.4.27':
     resolution: {integrity: sha512-E+RyqY24KnyDXsCuQrI+mlcdW3ALND6U7Gqa/+bVwbcpcR3BRRIckFoz7Qyd4TTlnugtwuI7YgjbvsLmxb+yvg==}
@@ -4892,6 +4906,13 @@ snapshots:
       '@babel/helper-plugin-utils': 7.24.5
       '@babel/parser': 7.24.5
       '@vue/compiler-sfc': 3.4.27
+
+  '@vue/compat@3.4.27(vue@3.4.27)':
+    dependencies:
+      '@babel/parser': 7.24.5
+      estree-walker: 2.0.2
+      source-map-js: 1.2.0
+      vue: 3.4.27
 
   '@vue/compiler-core@3.4.27':
     dependencies:
